@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <title class="lng-org-and-host-title">IBO2024 &ndash; Organisations & Hosts</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logos/new_logos/logo_8(ico_2).ico"/>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="orgs-and-hosts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat:wght@500&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="org-and-host-preloader">
+    <div class="spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<script>
+    let orgAndHostLoader = document.getElementById("org-and-host-preloader");
+
+    window.addEventListener("load", function () {
+        orgAndHostLoader.style.display = 'none';
+    })
+</script>
+<!-- Loader -->
+
+<div class="main-content" id="my-scrollbar" data-scrollbar>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img class="px-2" src="img/logos/new_logos/logo_7.png" width="100" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-1" href="index.html">
+                            IBO-2024
+                        </a>
+                        <span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li>
+                                <a class="sub-menu__link lng-navbar-sub-menu__link-1-1" href="org-and-host.html">
+                                    Organizers & Hosts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link lng-navbar-menu__link-8" href="visa-kz.html">
+                                   Visa information
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-2" href="#">
+                            Kazakhstan
+                        </a>
+                        <span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li>
+                                <a class="sub-menu__link lng-navbar-sub-menu__link-2-1" href="about-kz.html">
+                                    About Kazakhstan
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link lng-navbar-sub-menu__link-2-2" href="ach-team-kz.html">
+                                    Achievement of the national team of Kazakhstan
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-3" href="#">
+                            Participation
+                        </a>
+                        <!--<span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-3-1" href="#">1</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-3-2" href="#">2</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-3-3" href="#">3</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-4" href="#">
+                            News
+                        </a>
+                        <!--<span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-4-1" href="#">1</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-4-2" href="#">2</a></li>
+                            <li><a class="sub-menu__link lng-navbar-sub-menu__link-4-3" href="#">3</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                        <a class="menu__link lng-navbar-menu__link-5" href="program-kz.html">
+                            Program
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__btn-group">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button
+                                type="button"
+                                class="header__btn btn btn-outline-dark"
+                                data-btn="kz"
+                                style="background: url('https://flagcdn.com/kz.svg') center/cover no-repeat;"
+                        ></button>
+                        <button
+                                type="button"
+                                class="header__btn btn btn-outline-dark"
+                                data-btn="en"
+                                style="background: url('https://flagcdn.com/gb.svg') center/cover no-repeat;"
+                        >
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="org_and_hosts">
+        <div class="org_and_hosts_main_title text-center pt-4">
+            <h2 class="lng-org-and-host__title-main">ORGANISATIONS & HOSTS</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="lng-org-and-host__bi-1">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item lng-org-and-host__bi-2">
+                        <a href="#">
+                            IBO-2024
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active lng-org-and-host__bi-3" aria-current="page">
+                        Organisers & Hosts
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 155" style="margin-top: -1px;">
+            <path fill="#F8F9FA" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="py-5">
+            <div class="container p-5 mb-5 shadow-lg bg-light">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <p class="list-group-item list-group-item-info m-0 lng-org-and-host__list-title-1"
+                               role="tab">
+                                ORGANISATIONS
+                            </p>
+                            <a class="list-group-item list-group-item-action active lng-org-and-host__list-link-1"
+                               id="list-mon-list"
+                               data-bs-toggle="list"
+                               href="#list-mon" role="tab" aria-controls="list-mon">
+                                Ministry of Education
+                            </a>
+                            <a class="list-group-item list-group-item-action lng-org-and-host__list-link-2"
+                               id="list-daryn-list" data-bs-toggle="list"
+                               href="#list-daryn" role="tab" aria-controls="list-daryn">
+                                Daryn
+                            </a>
+                            <br>
+                            <p class="list-group-item list-group-item-info m-0 lng-org-and-host__list-title-2"
+                               role="tab">
+                                STRUCTURE OF THE ORGANISING COMMITTEE
+                            </p>
+                            <a class="list-group-item list-group-item-action lng-org-and-host__list-link-3"
+                               id="list-structure-list"
+                               data-bs-toggle="list"
+                               href="#list-structure" role="tab" aria-controls="list-structure">
+                                Committee List
+                            </a>
+                            <a class="list-group-item list-group-item-action lng-org-and-host__list-link-4"
+                               id="list-scientific-committee-list"
+                               data-bs-toggle="list"
+                               href="#list-scientific-committee" role="tab" aria-controls="list-scientific-committee">
+                                Scientific Committee list
+                            </a>
+                            <a class="list-group-item list-group-item-action lng-org-and-host__list-link-5"
+                               id="list-sub-group-meeting"
+                               data-bs-toggle="list"
+                               href="#list-sub-group" role="tab" aria-controls="list-sub-group">
+                                Sub-group Meeting
+                            </a>
+                            <br>
+                            <p class="list-group-item list-group-item-info m-0 lng-index-partners__title-main"
+                               role="tab">
+                                Partners
+                            </p>
+                            <a class="list-group-item list-group-item-action lng-index-partners__title-sm-1"
+                               id="list-nu-list"
+                               data-bs-toggle="list"
+                               href="#list-nu" role="tab" aria-controls="list-nu">
+                                Nazarbayev University
+                            </a>
+                            <a class="list-group-item list-group-item-action lng-index-partners__title-sm-2"
+                               id="list-parkin-list" data-bs-toggle="list"
+                               href="#list-parkin" role="tab" aria-controls="list-parkin">
+                                Park Inn by Radisson Astana
+                            </a>
+                            <br>
+                            <p class="list-group-item list-group-item-info m-0 lng-index-sponsors__title-main"
+                               role="tab">
+                                Sponsor
+                            </p>
+                            <a class="list-group-item list-group-item-action lng-index-sponsors__title-sm"
+                               id="list-ff-list"
+                               data-bs-toggle="list"
+                               href="#list-ff" role="tab" aria-controls="list-ff">
+                                Freedom Finance
+                            </a>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="border: 1px solid #D9DADB; border-radius: 5px">
+                        <div class="py-5 tab-content" id="nav-tabContent">
+                            <div class="px-3 org_and_hosts_list_content tab-pane fade show active" id="list-mon"
+                                 role="tabpanel"
+                                 aria-labelledby="list-mon-list">
+                                <h2 class="org_and_hosts_list_title lng-org-and-host__list-content-1-title">
+                                    Ministry of Education is delighted to host the 35th IBO-2024
+                                </h2>
+                                <br>
+                                <p>
+                                    <img src="img/logos/Logo_Mon_2_WB.png" alt=""
+                                         style="float: left; margin: 7px 7px 7px 0"
+                                         class="img-fluid">
+                                    <span class="lng-org-and-host__list-content-1-text-1">
+                                    The Ministry of education believes that education is the cornerstone of building an
+                                    enabled
+                                    community that can keep pace with the advancements of the world.
+                                    </span>
+                                </p>
+                                <p class="lng-org-and-host__list-content-1-text-2">
+                                    Over the past decades, the wise leadership of the country was keen on building an
+                                    educational system that matched its counterparts in the advanced nations. It
+                                    harnessed
+                                    for
+                                    this purpose all the required capabilities, in order to achieve the country’s agenda
+                                    and
+                                    national vision in this regard. Sincere efforts have also been made to develop
+                                    education
+                                    and
+                                    adopt the best systems that achieve high-quality education outputs, in order to
+                                    achieve
+                                    the
+                                    future visions and aspirations of the wise leadership.
+                                </p>
+                            </div>
+                            <div class="px-3 org_and_hosts_list_content tab-pane fade" id="list-daryn" role="tabpanel"
+                                 aria-labelledby="list-daryn-list">
+                                <h2 class="org_and_hosts_list_title lng-org-and-host__list-content-2-title">
+                                    Daryn,&nbsp; Astana
+                                </h2>
+                                <br>
+                                <p>
+                                    <img src="img/logos/Logo_Daryn_2_WB.png" alt=""
+                                         style="float: left; margin: 7px 7px 7px 0"
+                                         class="img-fluid">
+                                    <span class="lng-org-and-host__list-content-2-text-1">
+                                    The Republican scientific and practical center «Daryn» of the Ministry of education
+                                    of the Republic of Kazakhstan is Republican state-owned enterprise providing
+                                    administration in the field of education on identifying and supporting gifted
+                                    children
+                                    and
+                                    talented youth in Kazakhstan.
+                                    </span>
+                                </p>
+                                <h5 class="org_and_hosts_list_sm_title lng-org-and-host__list-content-2-text-2">
+                                    Our mission
+                                </h5>
+                                <p class="lng-org-and-host__list-content-2-text-3">
+                                    Identification, development and professional support of gifted children and talented
+                                    youth
+                                    in Kazakhstan.
+                                </p>
+                                <h5 class="org_and_hosts_list_sm_title lng-org-and-host__list-content-2-text-4">
+                                    Main goal
+                                </h5>
+                                <p class="lng-org-and-host__list-content-2-text-5">
+                                    Creation of a unified modern system of identifying, developing and realizing the
+                                    potential
+                                    and creative abilities of gifted children in Kazakhstan.
+                                </p>
+                            </div>
+                            <div class="org_and_hosts_table_content tab-pane fade" id="list-structure" role="tabpanel"
+                                 aria-labelledby="list-structure-list">
+                                <h2 class="org_and_hosts_list_title lng-org-and-host__list-content-3-title">
+                                    STRUCTURE OF THE ORGANISING COMMITTEE
+                                </h2>
+                                <table class="table table-responsive-lg table-light table-hover table-bordered text-center mt-4 align-middle">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="lng-org-and-host__table-row-1-col-1">ФИО</th>
+                                        <th scope="col">-</th>
+                                        <th scope="col" class="lng-org-and-host__table-row-1-col-3">Должность</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-2-col-1">
+                                            Бейсембаев Гани
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-2-col-3">
+                                            Министр просвещения Республики Казахстан, председатель
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-3-col-1">
+                                            Каринова Шолпан 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-3-col-3">
+                                            Первый вице-министр просвещения Республики Казахстан, заместитель
+                                            председателя
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-4-col-1">
+                                            Саясат
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-4-col-3">
+                                            Министр науки и высшего образования Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-5-col-1">
+                                            Касымбек Женис
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-5-col-3">
+                                            Аким города Астаны, заместитель председателя
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-6-col-1">
+                                            Жамаубаев Ерулан
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-6-col-3">
+                                            Министр финансов Республики Казахстан
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-7-col-1">
+                                            Куантыров Алибек
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-7-col-3">
+                                            Министр национальной экономики Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-8-col-1">
+                                            Гиният Ажар
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-8-col-3">
+                                            Министр здравоохранения Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-9-col-1">
+                                            Ахметжанов Марат
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-9-col-3">
+                                            Министр внутренних дел Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-10-col-1">
+                                            Карабаев Марат
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-10-col-3">
+                                            Министр индустрии и инфраструктурного развития Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-11-col-1">
+                                            Оралов Асхат
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-11-col-3">
+                                            Министр культуры и спорта Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-12-col-1">
+                                            Кыдырали Дархан Куандыкулы
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-12-col-3">
+                                            Министр информации и общественного развития Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-13-col-1">
+                                            Шигео Катсу
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-13-col-3">
+                                            И.о. председателя комитета среднего образования Министерства просвещения
+                                            Республики Казахстан
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-14-col-1">
+                                            Турсунов Гаждембек
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-14-col-3">
+                                            Директор Республиканского государственного казенного предприятия
+                                            «Республиканский научно-практический центр «Дарын» Министерства просвещения
+                                            Республики Казахстан, секретарь
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-15-col-1">
+                                            Бисенбаев Амангельды
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-15-col-3">
+                                            доктор биологических наук, профессор кафедры молекулярной биологии и
+                                            генетики, руководитель научного организационного комитета
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-16-col-1">
+                                            Сарбасов Дос
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-16-col-3">
+                                            доктор биологических наук, профессор школы естественных, социальных и
+                                            гуманитарных наук АОО «Назарбаев Университет»
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-17-col-1">
+                                            Кенджи Байрам
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-17-col-3">
+                                            член научного комитета, магистр биологии, тренер сборной команды Республики
+                                            Казахстан по биологии
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-18-col-1">
+                                            Сакимов Ильяс
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-18-col-3">
+                                            член научного комитета, магистр, биологии, методист международного
+                                            общественного фонда «Білім-Инновация»
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-19-col-1">
+                                            Сагинтаев Адлет
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-19-col-3">
+                                            член научного комитета, докторант PhD 2 курса АОО «Назарбаев Университет»,
+                                            победитель международных олимпиад по биологии
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-20-col-1">
+                                            Мажикенов Аскар
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-20-col-3">
+                                            член научного комитета, студент 2 курса АОО «Назарбаев Университет»,
+                                            победитель международных олимпиад по биологии
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="org_and_hosts_table_content tab-pane fade" id="list-scientific-committee" role="tabpanel"
+                                 aria-labelledby="list-scientific-committee-list">
+                                <h2 class="org_and_hosts_list_title lng-org-and-host__list-content-4-title">
+                                    STRUCTURE OF THE SCIENTIFIC COMMITTEE
+                                </h2>
+                                <table class="table table-responsive-lg table-light table-hover table-bordered text-center mt-4 align-middle">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-1-col-0">Co-Chairs:</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lng-org-and-host__table-science-row-0-col-1">Sagintayev Adlet</th>
+                                        <td scope="col" class="lng-org-and-host__table-science-row-0-col-2">Medical University of Graz, Austria.</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-1-col-1">
+                                            Sakimov Ilyas
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-1-col-2">
+                                            Head of Biology Department in “Bilim-Innovation” ISF
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-2-col-0">Theoretical exams:</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-2-col-1">
+                                            Otarbayev Daniyar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-2-col-2">
+                                            UNIST (Republic of Korea) PhD student
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-3-col-1">
+                                            Muratov Yerasyl 
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-3-col-2">
+                                            University of Derbecen (Hungary), student of Medicine
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-4-col-1">
+                                            Temirbekov Yerasyl
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-4-col-2">
+                                            HKUST (Hong Kong), student
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-5-col-1">
+                                            Zhalmagambetov Bakhytbek
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-5-col-2">
+                                            Internal medicine specialist, MD degree. Master's program in Epidemiology, Indonesia, Surabaya
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-6-col-1">
+                                            Zhumadil Khafiz
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-6-col-2">
+                                            Medical consultant, Astana
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-7-col-1">
+                                            Alikenova Balzhan
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-7-col-2">
+                                            Chinese University of Hong Kong, undergraduate student in Biomedical Sciences
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-8-col-1">
+                                            Urkumbayev Eldar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-8-col-2">
+                                            Massachusetts Institute of Technology, Cambridge, Massachusetts, USA. Undergraduate student in environmental engineering
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-9-col-1">
+                                            Dinmukhammed Omar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-9-col-2">
+                                            Nanyang Technological University, Singapore. Students in Biological Sciences
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-10-col-1">
+                                            Zhumagaleyev Alikhan
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-10-col-2">
+                                            The Chinese University of Hong Kong. Bachelor of Biomedical Sciences
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-11-col-1">
+                                            Aidanov Azamat
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-11-col-2">
+                                            Biology teacher in “Astana Garden School”, Astana
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-12-col-1">
+                                            Nazarbekov Alisher
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-12-col-2">
+                                            KAIST, Daejeon, Korea. PhD candidate, chemical and biomolecular engineering.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-13-col-1">
+                                            Diassova Ansal
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-13-col-2">
+                                            Nazarbayev University, Astana. BSc in Biological Sciences (Minor in Chemistry).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-14-col-1">
+                                            Aitpayev Anuar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-14-col-2">
+                                            MD student at Nazarbayev University, Astana, Kazakhstan
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-15-col-1">
+                                            Kassym Yerkin
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-15-col-2">
+                                            Nazarbayev University, Astana. Medical science
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-16-col-1">
+                                            Koshenov Zhanat
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-16-col-2">
+                                            Cornell University, Weill Cornell Medicine, Postdoctoral Associate
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-17-col-1">
+                                            Turtemir Adilet
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-17-col-2">
+                                            UNIST, Ulsan, Republic of Korea. Combined M.S and PhD in Biological Sciences.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-18-col-1">
+                                            Orakov Askarbek
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-18-col-2">
+                                            European Molecular Biology Laboratory, Heidelberg, Germany. PhD Candidate.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-19-col-1">
+                                            Sagandyk Sanzhar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-19-col-2">
+                                            UNIST, Ulsan, Republic of Korea / IBS CGI. Intern/biomedical engineering.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-20-col-1">
+                                            Sulaimanov Nurlybek
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-20-col-2">
+                                            Korea Seoul, Biological Sciences
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-21-col-1">
+                                            Askerov Alyamdar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-21-col-2">
+                                            Biology teacher in “RIVIERA International School by Quantum
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-3-col-0">Practical Exams:</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-4-col-0">Biochemistry</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-22-col-1">
+                                            Akhmadi Aizhan
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-22-col-2">
+                                            Nazarbayev University (Astana), PhD candidate.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-23-col-1">
+                                            Nazarbekov Alisher
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-23-col-2">
+                                            KAIST, Daejeon, Korea. PhD candidate, chemical and biomolecular engineering.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-24-col-1">
+                                            Otarbayev Daniyar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-24-col-2">
+                                            UNIST (Republic of Korea) PhD student.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-25-col-1">
+                                            Turtemir Adilet
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-25-col-2">
+                                            UNIST, Ulsan, Republic of Korea. Combined M.S and PhD in Biological Sciences
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-26-col-1">
+                                            Polina Len
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-26-col-2">
+                                            Nazarbayev University, Research Assistant, BSc.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-27-col-1">
+                                            Kussanova Aigul
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-27-col-2">
+                                            Nazarbayev University, Research Techologist at Core facilities, Master of biology.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-5-col-0">Molecular Biology</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-28-col-1">
+                                            Yerpasheva Dana
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-28-col-2">
+                                            Master of Science (Biology), Nazarbayev University (Astana), Laboratory Manager.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-29-col-1">
+                                            Balabiyev Arnat
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-29-col-2">
+                                            Predictive Oncology Inc (Pittsburgh, PA, USA). Lead Scientist.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-30-col-1">
+                                            Meirkhanova Ayagoz
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-30-col-2">
+                                            Nazarbayev University, Department of Biology, Research assistant.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-31-col-1">
+                                            Nargiz Rakhimgerey
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-31-col-2">
+                                            Nazarbayev University, Research Assistant at lab of cell growth regulation, MSc in Biological Sciences and Technologies.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-32-col-1">
+                                            Dzhanibekova Marina
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-32-col-2">
+                                            Private institution "National Laboratory Astana", Junior Researcher.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-33-col-1">
+                                            Kanketayeva Zhansaya
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-33-col-2">
+                                            Nazarbayev University, PhD student in Life Sciences, Biology Department.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-6-col-0">Animal physiology and anatomy</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-34-col-1">
+                                            Askarova Leyla
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-34-col-2">
+                                            BSc in Biological Sciences, MD candidate, Research assistant, Nazarbayev University.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-35-col-1">
+                                            Zhalmagambetov Bakhytbek
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-35-col-2">
+                                            General Practitioner, MD degree. Master's program in Epidemiology, Indonesia, Surabaya.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-36-col-1">
+                                            Zhumagaleyev Alikhan
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-36-col-2">
+                                            The Chinese University of Hong Kong, Hong Kong SAR, China. Bachelor of Biomedical Sciences.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-37-col-1">
+                                            Sydykova Kamilya
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-37-col-2">
+                                            Nazarbayev University, SSH, Biology department, ⁠Laboratory Assistant, Master's degree in Biological Sciences.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-38-col-1">
+                                            Zhaisanbayeva Balnur
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-38-col-2">
+                                            Nazarbayev university, PhD candidate/research assistant.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-39-col-1">
+                                            Adina Zhumakhanova
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-39-col-2">
+                                            Nazarbayev University School of Medicine, Enrolled in the MD program.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" colspan=2 class="lng-org-and-host__table-row-7-col-0">Bioinformatics</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-40-col-1">
+                                            Askerov Alyamdar
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-40-col-2">
+                                            Biology teacher in “RIVIERA International School by Quantum”, Astana.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-science-row-41-col-1">
+                                            Mureyev Shamil
+                                        </th>
+                                        <td class="lng-org-and-host__table-science-row-41-col-2">
+                                            Undergraduate student in Nazarbayev University, Astana, Kazakhstan.
+                                        </td>
+                                    </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!---sultanwasHere-->
+                            <div class="org_and_hosts_table_content tab-pane fade" id="list-sub-group-meeting" role="tabpanel"
+                                 aria-labelledby="list-sub-group-list">
+                                <h2 class="org_and_hosts_list_title lng-org-and-host__list-content-5-title">
+                                    STRUCTURE OF THE SUB-GROUP MEETING
+                                </h2>
+                                <table class="table table-responsive-lg table-light table-hover table-bordered text-center mt-4 align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan=2 class="lng-org-and-host__table-row-8-col-0">Sub-group members:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-22-col-1">
+                                            Gerard Cobut 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-22-col-3">
+                                            Belgium (SC representative)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-23-col-1">
+                                            Alexandr Rubtsov 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-23-col-3">
+                                            Russia
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-24-col-1">
+                                            Domen Vaupotic 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-24-col-3">
+                                            Slovenia
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-25-col-1">
+                                            Sandor Ban 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-25-col-3">
+                                            Hungary 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-26-col-1">
+                                            Yevgeniy Shilov 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-26-col-3">
+                                            Russia
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-27-col-1">
+                                            Ronald Cruz 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-27-col-3">
+                                            Philippines
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-28-col-1">
+                                            Aditya David Wirawan 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-28-col-3">
+                                            Indonesia
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-29-col-1">
+                                            Christiane Mühle 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-29-col-3">
+                                            Germany
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-30-col-1">
+                                            Dayan Melisov 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-30-col-3">
+                                            Kyrgyzstan
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="lng-org-and-host__table-row-31-col-1">
+                                            Niko Johansson 
+                                        </th>
+                                        <td>-</td>
+                                        <td class="lng-org-and-host__table-row-31-col-3">
+                                            Finland
+                                        </td>
+                                    </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div> <!-----sultan was here-->>
+                            
+                            <div class="px-3 org_and_hosts_list_content tab-pane fade" id="list-nu" role="tabpanel"
+                                 aria-labelledby="list-nu-list">
+                                <h2 class="org_and_hosts_list_title lng-index-partners__title-sm-1">
+                                    Nazarbayev University
+                                </h2>
+                                <br>
+                                <p>
+                                    <img src="img/logos/nu-logo.png" alt=""
+                                         style="float: left; margin: 7px 7px 7px 0"
+                                         class="img-fluid">
+                                    <!--<span class="lng-org-and-host__list-content-2-text-1">-->
+                                    <!--To give Kazakhstan and the world the scientists, academics, managers, and entrepreneurs needed to prosper and develop.-->
+                                    <!--</span>-->
+                                </p>
+                                <h5 class="org_and_hosts_list_sm_title lng-index-partners__mon-title-sm-1">
+                                    Vision
+                                </h5>
+                                <p class="lng-index-partners__mon-text-1">
+                                    To give Kazakhstan and the world the scientists, academics, managers, and entrepreneurs needed to prosper and develop.
+                                </p>
+                                <h5 class="org_and_hosts_list_sm_title lng-index-partners__mon-title-sm-2">
+                                    Mission
+                                </h5>
+                                <p class="lng-index-partners__text-1">
+                                    To be a model for higher education reform and modern research; to contribute to the establishment of Astana as an international knowledge, innovation, and medical hub; and to prepare students for a world of increased volatility, uncertainty, complexity, and ambiguity.
+                                </p>
+                            </div>
+                            <div class="px-3 org_and_hosts_list_content tab-pane fade" id="list-parkin" role="tabpanel"
+                                 aria-labelledby="list-parkin-list">
+                                <h2 class="org_and_hosts_list_title lng-index-partners__title-sm-2">
+                                    Park Inn by Radisson Astana
+                                </h2>
+                                <br>
+                                <p>
+                                    <img src="img/logos/parkin-logo.png" alt=""
+                                         style="float: left; margin: 7px 7px 7px 0"
+                                         class="img-fluid">
+                                <!--    <span class="lng-org-and-host__list-content-2-text-1">-->
+                                <!--    The Republican scientific and practical center «Daryn» of the Ministry of education-->
+                                <!--    of the Republic of Kazakhstan is Republican state-owned enterprise providing-->
+                                <!--    administration in the field of education on identifying and supporting gifted-->
+                                <!--    children-->
+                                <!--    and-->
+                                <!--    talented youth in Kazakhstan.-->
+                                <!--    </span>-->
+                                </p>
+                                <!--<h5 class="org_and_hosts_list_sm_title lng-org-and-host__list-content-2-text-2">-->
+                                <!--    Our mission-->
+                                <!--</h5>-->
+                                <!--<p class="lng-org-and-host__list-content-2-text-3">-->
+                                <!--    Identification, development and professional support of gifted children and talented-->
+                                <!--    youth-->
+                                <!--    in Kazakhstan.-->
+                                <!--</p>-->
+                                <!--<h5 class="org_and_hosts_list_sm_title lng-org-and-host__list-content-2-text-4">-->
+                                <!--    Main goal-->
+                                <!--</h5>-->
+                                <!--<p class="lng-org-and-host__list-content-2-text-5">-->
+                                <!--    Creation of a unified modern system of identifying, developing and realizing the-->
+                                <!--    potential-->
+                                <!--    and creative abilities of gifted children in Kazakhstan.-->
+                                <!--</p>-->
+                            </div>
+                            <div class="px-3 org_and_hosts_list_content tab-pane fade" id="list-ff" role="tabpanel"
+                                 aria-labelledby="list-ff-list">
+                                <h2 class="org_and_hosts_list_title lng-index-sponsors__title-sm">
+                                    Freedom Finance
+                                </h2>
+                                <br>
+                                <p>
+                                    <img src="img/logos/freedom_logo-new.png" alt=""
+                                         style="float: left; margin: 7px 7px 7px 0"
+                                         class="img-fluid">
+                                <!--    <span class="lng-org-and-host__list-content-2-text-1">-->
+                                <!--    The Republican scientific and practical center «Daryn» of the Ministry of education-->
+                                <!--    of the Republic of Kazakhstan is Republican state-owned enterprise providing-->
+                                <!--    administration in the field of education on identifying and supporting gifted-->
+                                <!--    children-->
+                                <!--    and-->
+                                <!--    talented youth in Kazakhstan.-->
+                                <!--    </span>-->
+                                <!--</p>-->
+                                <!--<h5 class="org_and_hosts_list_sm_title lng-org-and-host__list-content-2-text-2">-->
+                                <!--    Our mission-->
+                                <!--</h5>-->
+                                <!--<p class="lng-org-and-host__list-content-2-text-3">-->
+                                <!--    Identification, development and professional support of gifted children and talented-->
+                                <!--    youth-->
+                                <!--    in Kazakhstan.-->
+                                <!--</p>-->
+                                <!--<h5 class="org_and_hosts_list_sm_title lng-org-and-host__list-content-2-text-4">-->
+                                <!--    Main goal-->
+                                <!--</h5>-->
+                                <!--<p class="lng-org-and-host__list-content-2-text-5">-->
+                                <!--    Creation of a unified modern system of identifying, developing and realizing the-->
+                                <!--    potential-->
+                                <!--    and creative abilities of gifted children in Kazakhstan.-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style="margin-top: -1px;">
+            <path fill="#FFFFFF" fill-opacity="1"
+                  d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+        </svg>
+        <div class="container text-center pt-0">
+            <div class="row">
+                <div class="col-xl-3 col-12 d-flex flex-column">
+                    <div class="p-2 text-start">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logos/new_logos/logo_7.png" width="100" alt="">
+                        </a>
+                    </div>
+                    <div class="p-2 text-start">
+                        <p style="font-size: 14px;" class="lng-footer__title-main">
+                            Kazakhstan is honoured to host the 35th IBO, the world’s most prestigious scientific
+                            Olympiad,
+                            in
+                            2024
+                        </p>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-1">IBO-2024</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                                <a href="org-and-host.html" class="lng-footer__link-1">
+                                    Organisers & Hosts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-2">Kazakhstan</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                                <a href="about-kz.html" class="lng-footer__link-2">
+                                    About Kazakhstan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-3">Participation</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-4">News</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col pt-3 d-flex flex-column align-items-center">
+                    <div class="p-2 text-center">
+                        <h6 class="lng-footer__title-sm-5">Social Media</h6>
+                    </div>
+                    <div class="p-2 text-center">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/js-bootstrap/bootstrap.min.js"></script>
+
+<script src="js/js-in/script.js"></script>
+
+<script src="js/js-langs/langs-change.js?v=30" type="module"></script>
+
+<script src="js/js-in/smooth-scroll.js"></script>
+<script>
+    let Scrollbar = window.Scrollbar;
+
+    if (!isMobile.any()) {
+        let scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'), {damping: 0.05, thumbMinSize: 150});
+
+        scrollbar.track.xAxis.element.remove()
+    }
+</script>
+<script src="lang-org-and-host.js"></script>
+
+</body>
+</html>
